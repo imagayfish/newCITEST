@@ -4,6 +4,5 @@ python:
 - 2.7
 - 3.4
 install: pip install -r requirement.txt
-script: pytest 
-        - coverage run tests.test_hello.py 
-after_success: - bash <(curl -s https://codecov.io/bash)
+script: pytest
+
