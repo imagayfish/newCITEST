@@ -3,4 +3,9 @@ sudo: false
 python:
 - 2.7
 - 3.4
-
+install: 
+  - pip install codecov
+script: - py.test -v
+        - coverage run test.py
+after_success:
+  - codecov
